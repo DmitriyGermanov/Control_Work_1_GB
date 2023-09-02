@@ -22,6 +22,9 @@ string[] Search(string[] data)
             count++;
     }
     string[] outputArray = new string[count];
+    if (count == 0)
+    return null!;
+    else{
     count = 0;
     for (int i = 0; i < data.Length; i++)
     {
@@ -32,6 +35,7 @@ string[] Search(string[] data)
         }
     }
     return outputArray;
+    }
 }
 
 void PrintArray(string massage, string[] inputArray)
@@ -58,7 +62,7 @@ else
     string[] searchArray = Search(inputArray);
     PrintArray("Исходный массив строк: ", inputArray);
     Console.WriteLine();
-    if (searchArray.Length == 0)
+    if (searchArray == null)
         Console.Write("Исходный массив не содержит слов с длиной менее трех символов");
     else
         PrintArray("Результат обработки: ", searchArray);
