@@ -24,4 +24,5 @@ string[] Search(string[] data)
         if (data[i].Length <= 3)
             outputArray[i] = data[i];
     }
+    return outputArray;
 }
