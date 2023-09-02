@@ -21,11 +21,11 @@ string[] Search(string[] data)
         if (data[i].Length <= 3)
             count++;
     }
-    string[] outputArray = new string[count];
     if (count == 0)
         return null!;
     else
     {
+        string[] outputArray = new string[count];
         count = 0;
         for (int i = 0; i < data.Length; i++)
         {
@@ -51,7 +51,6 @@ void PrintArray(string massage, string[] inputArray)
             Console.Write($"{inputArray[i]}, ");
     }
 }
-
 
 string[] inputArray = Input("Введите строки через запятую или пробел:");
 if (inputArray.Length == 1 && inputArray[0] == "")
