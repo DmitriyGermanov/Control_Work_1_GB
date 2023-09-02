@@ -3,6 +3,8 @@
 // либо задать на старте выполнения алгоритма. При решении не рекомендуется пользоваться коллекциями, 
 // лучше обойтись исключительно массивами.
 
+using System.Globalization;
+
 string[] Input(string massage)
 {
     Console.Write($"{massage} ");
@@ -19,22 +21,32 @@ string[] Search(string[] data)
             count++;
     }
     string[] outputArray = new string[count];
+    count=0;
     for (int i = 0; i < data.Length; i++)
     {
+
         if (data[i].Length <= 3)
-            outputArray[i] = data[i];
+        {
+            outputArray[i] = data[count];
+            count++;
+        }
     }
     return outputArray;
 }
 
 void PrintArray(string[] inputArray)
 {
-    for(i=0; i<inputArray.Length; i++)
-    Console.Write($"{inputArray[i]}, ");
+    for (int i = 0; i < inputArray.Length; i++)
+    {
+        if (i == inputArray.Length - 1)
+            Console.Write($"{inputArray[i]}");
+        else
+            Console.Write($"{inputArray[i]}, ");
+    }
 }
 
 string[] inputArray = Input("Введите строки через запятую или пробел:");
 string[] searchArray = Search(inputArray);
-void PrintArray(inputArray);
-Console.WriteLine;
-void PrintArray(searchArray);
+PrintArray(inputArray);
+Console.WriteLine();
+PrintArray(searchArray);
