@@ -70,7 +70,7 @@
 Программы была разработана на языке программирования *C#* с использованием программы *Visual Studio Code*
 
 В основе разработки программы лежит следующая блок-схема:
-[![Блок-схема проекта](https://raw.githubusercontent.com/DmitriyGermanov/Control_Work_1_GB/main/images/Block_diagram.PNG)
+![Блок-схема проекта](https://raw.githubusercontent.com/DmitriyGermanov/Control_Work_1_GB/main/images/Block_diagram.PNG)
 
 
 <!-- CONTACT -->
