@@ -9,7 +9,7 @@
     </li>
     <li><a href="#usage">Как использовать</a></li>
     <li><a href="#roadmap">Разработка</a></li>
-    <li><a href="#contact">Контакты</a></li>
+    <li><a href="#Контакты">Контакты</a></li>
   </ol>
 </details>
 
