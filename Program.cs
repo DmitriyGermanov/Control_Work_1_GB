@@ -1,13 +1,14 @@
-﻿// Задача: Написать программу, которая из имеющегося массива строк формирует новый массив из строк, 
+// Задача: Написать программу, которая из имеющегося массива строк формирует новый массив из строк, 
 // длина которых меньше, либо равна 3 символам. Первоначальный массив можно ввести с клавиатуры, 
 // либо задать на старте выполнения алгоритма. При решении не рекомендуется пользоваться коллекциями, 
 // лучше обойтись исключительно массивами.
 
-using System.Globalization;
+using System.Text;
 
 string[] Input(string massage)
 {
     Console.Write($"{massage} ");
+    Console.InputEncoding = System.Text.Encoding.GetEncoding("utf-16");
     string[] input = Console.ReadLine()!.Split(new char[] { ' ', ',' });
     return input;
 }
@@ -21,21 +22,22 @@ string[] Search(string[] data)
             count++;
     }
     string[] outputArray = new string[count];
-    count=0;
+    count = 0;
     for (int i = 0; i < data.Length; i++)
     {
-
         if (data[i].Length <= 3)
         {
-            outputArray[i] = data[count];
+            outputArray[count] = data[i];
             count++;
         }
     }
     return outputArray;
 }
 
-void PrintArray(string[] inputArray)
+void PrintArray(string massage, string[] inputArray)
 {
+
+    Console.Write($"{massage} ");
     for (int i = 0; i < inputArray.Length; i++)
     {
         if (i == inputArray.Length - 1)
@@ -45,8 +47,20 @@ void PrintArray(string[] inputArray)
     }
 }
 
+
 string[] inputArray = Input("Введите строки через запятую или пробел:");
-string[] searchArray = Search(inputArray);
-PrintArray(inputArray);
-Console.WriteLine();
-PrintArray(searchArray);
+if (inputArray.Length == 1 && inputArray[0] == "")
+{
+    Console.Write("Исходный массив пуст");
+}
+else
+{
+    string[] searchArray = Search(inputArray);
+    PrintArray("Исходный массив строк: ", inputArray);
+    Console.WriteLine();
+    if (searchArray.Length == 0)
+        Console.Write("Исходный массив не содержит слов с длиной менее трех символов");
+    else
+        PrintArray("Результат обработки: ", searchArray);
+}
+
