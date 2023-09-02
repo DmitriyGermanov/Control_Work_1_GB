@@ -18,7 +18,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## О проекте
-[![Контрольная работа №1][product-screenshot]](https://raw.githubusercontent.com/DmitriyGermanov/Control_Work_1_GB/main/images/about_the_project.PNG)
+[![Контрольная работа №1](https://raw.githubusercontent.com/DmitriyGermanov/Control_Work_1_GB/main/images/about_the_project.PNG)
 
 Данный проект был выполнен в качестве первой контрольной работы при обучении на курсе разработчика на платформе GeekBrains.
 
@@ -58,9 +58,9 @@
 
 Примеры корректно введенных данных:
 
-[![Ввод данных через " "][product-screenshot]](https://raw.githubusercontent.com/DmitriyGermanov/Control_Work_1_GB/main/images/Example_1.PNG)
+[![Ввод данных через " "](https://raw.githubusercontent.com/DmitriyGermanov/Control_Work_1_GB/main/images/Example_1.PNG)
 
-[![Ввод данных через ","][product-screenshot]](https://raw.githubusercontent.com/DmitriyGermanov/Control_Work_1_GB/main/images/Example_2.PNG)
+[![Ввод данных через ","](https://raw.githubusercontent.com/DmitriyGermanov/Control_Work_1_GB/main/images/Example_2.PNG)
 
 На выходе программа выдает все строки массива, которые содержат 3 или менее символов.
 
@@ -70,7 +70,7 @@
 Программы была разработана на языке программирования *C#* с использованием программы *Visual Studio Code*
 
 В основе разработки программы лежит следующая блок-схема:
-[![Блок-схема проекта][product-screenshot]](https://raw.githubusercontent.com/DmitriyGermanov/Control_Work_1_GB/main/images/Block_diagram.PNG)
+[![Блок-схема проекта](https://raw.githubusercontent.com/DmitriyGermanov/Control_Work_1_GB/main/images/Block_diagram.PNG)
 
 
 <!-- CONTACT -->
