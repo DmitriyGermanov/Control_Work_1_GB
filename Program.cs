@@ -26,3 +26,15 @@ string[] Search(string[] data)
     }
     return outputArray;
 }
+
+void PrintArray(string[] inputArray)
+{
+    for(i=0; i<inputArray.Length; i++)
+    Console.Write($"{inputArray[i]}, ");
+}
+
+string[] inputArray = Input("Введите строки через запятую или пробел:");
+string[] searchArray = Search(inputArray);
+void PrintArray(inputArray);
+Console.WriteLine;
+void PrintArray(searchArray);
