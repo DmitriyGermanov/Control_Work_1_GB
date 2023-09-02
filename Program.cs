@@ -23,18 +23,19 @@ string[] Search(string[] data)
     }
     string[] outputArray = new string[count];
     if (count == 0)
-    return null!;
-    else{
-    count = 0;
-    for (int i = 0; i < data.Length; i++)
+        return null!;
+    else
     {
-        if (data[i].Length <= 3)
+        count = 0;
+        for (int i = 0; i < data.Length; i++)
         {
-            outputArray[count] = data[i];
-            count++;
+            if (data[i].Length <= 3)
+            {
+                outputArray[count] = data[i];
+                count++;
+            }
         }
-    }
-    return outputArray;
+        return outputArray;
     }
 }
 
