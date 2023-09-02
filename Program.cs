@@ -63,7 +63,7 @@ else
     PrintArray("Исходный массив строк: ", inputArray);
     Console.WriteLine();
     if (searchArray == null)
-        Console.Write("Исходный массив не содержит слов с длиной менее трех символов");
+        Console.Write("Исходный массив не содержит строк с длиной менее трех символов");
     else
         PrintArray("Результат обработки: ", searchArray);
 }
