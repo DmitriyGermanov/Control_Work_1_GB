@@ -2,7 +2,7 @@
   <summary>Оглавление</summary>
   <ol>
     <li>
-      <a href="#about-the-project">О проекте</a>
+      <a href="#О проекте">О проекте</a>
     </li>
     <li>
       <a href="#getting-started">Приступая к работе</a>
