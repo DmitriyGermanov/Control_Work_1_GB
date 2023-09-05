@@ -65,6 +65,6 @@
 
 ## Контакты
 
- Разаботчик - [Дмитрий Германов](https://gb.ru/users/b296a643-d068-472d-930a-b503f815d5ed) - seltis.gtn@gmail.com
+ Разработчик - [Дмитрий Германов](https://gb.ru/users/b296a643-d068-472d-930a-b503f815d5ed) - seltis.gtn@gmail.com
 
 Ссылка на репозиторий [https://github.com/DmitriyGermanov/Control_Work_1_GB.git](https://github.com/DmitriyGermanov/Control_Work_1_GB.git)
